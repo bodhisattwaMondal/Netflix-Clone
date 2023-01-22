@@ -1,0 +1,159 @@
+.s-1::before{
+     height: 100vh; 
+}
+
+.s-1::after{
+    height: 100vh;
+}
+
+.s-1{
+    height: 97vh;
+}
+
+.s-2 .txt-container-1 .title-1 h1{
+    font-size: 3rem;
+}
+
+.s-2 .txt-container-1 .descp-1 p{
+    font-size: 1.5rem;
+}
+
+.s-3 .txt-container-2 .title-2 h1{
+    font-size: 3rem;
+}
+
+.s-3 .txt-container-2 .descp-2 p{
+    font-size: 1.5rem;
+}
+
+.s-4 .txt-container-3 .title-3 h1{
+    font-size: 3rem;
+}
+
+.s-4 .txt-container-3 .descp-3 p{
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:1210px){
+
+    /* Section-2/3/4  */
+    .s-2,.s-3,.s-4{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .txt-container-1,.txt-container-2,.txt-container-3{
+        text-align: center;
+    }
+
+    .s-3 .txt-container-2 .title-2{
+        width: auto;
+    }
+
+    .s-2 .txt-container-1 .descp-1,.s-3 .txt-container-2 .descp-2,.s-4 .txt-container-3 .descp-3{
+        width: auto;
+    }
+
+    /* Dropdown Question Answer Portion  */
+    .btn,.dropdown {
+        width: 80vw;
+    }
+
+    .sec-5 .info-content h1{
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width:945px){
+
+    /* Welcome Screen Form Portion  */
+    .form form{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid white; */
+    }
+
+    .form form input{
+        width: 450px;
+        margin: 20px;
+    }
+
+    .form form button a{
+        font-size: 1rem;
+    }
+
+    /* Welcome Landing Page Portion  */
+    .welcome{
+        top: 180px;
+    }
+
+    .content .welcome-txt h1{
+        font-size: 3rem;
+    }
+
+    /* Section-2 Graphics Portion  */
+    .s-2 .graphics-1 .image-container img{
+        width: 400px;
+    }
+
+    .s-2 .graphics-1 video{
+        left: 49px;
+        width: 300px;
+        top: 61px;
+    }
+
+    /* Section-3 Graphics Portion  */
+    .s-3 .graphics-2 .image-container img{
+        width: 450px;
+    }
+
+    .s-3 .graphics-2 .image-container .video-container-2{
+        width: 310px;
+        top: 215px;
+        left: 64px;
+    }
+
+    /* Section-4 Graphics Portion  */
+    .s-4 .graphics-3 .image-container img{
+        width: 450px;
+    }
+
+    .s-4 .graphics-3 video{
+        top: 26px;
+        left: 82px;
+        width: 280px;
+    }
+
+    /* Dropdown Question Answer Portion */
+    .btn {
+        font-size: 1.4rem;
+    }
+
+    .dropdown p {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width:645px){
+
+    /* Footer Portion  */
+    footer{
+        justify-content: center;
+    }
+
+    footer .f-content{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer .f-content .row{
+        margin: 20px;
+    }
+}

@@ -1,0 +1,417 @@
+/* font import from Google Fonts  */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:500,600,700&display=swap');
+
+
+/* Css reset  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #fff;
+    background-color: black;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+hr{
+    height: 8px;
+    width: 100vw;
+    color: #222222;
+    background-color: #222222;
+    border: none;
+    outline: none;
+}
+
+/* Section-1 */
+/* Welcome Screen Background Image  */
+.s-1::before{
+    content: "";
+    position: absolute;
+    top: -24px;
+    height: 75vh;
+    width: 100vw;
+    background: url(../img/bg.jpg) no-repeat center center/cover;
+    z-index: -2;
+
+}
+
+.s-1::after{
+    content: "";
+    position: absolute;
+    top: -24px;
+    height: 75vh;    
+    width: 100vw;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.918), rgba(0, 0, 0, 0.137));
+    z-index: -1;
+}
+
+.s-1{
+    position: relative;
+    height: 72vh;
+    /* border: 2px solid greenyellow; */
+}
+
+/* Header  */
+.s-1 header{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+header .logo{
+    width: 158px;
+    height: 55px;
+}
+
+header .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Sign-In Btn.  */
+header .log-in-btn button{
+    padding: 8px 20px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: #e30914;
+    cursor: pointer;
+    
+}
+
+header .log-in-btn button a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 450;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.welcome{
+    text-align: center;
+    position: absolute;
+    top: 220px;
+    left: 0px;
+}
+
+.welcome .content{
+    width: 100vw;
+    height: 40vh;
+    /* border: 2px solid red; */
+}
+
+
+
+.content .welcome-txt h1{
+    font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+
+.content .welcome-txt #down{
+    margin-top: -5px;
+}
+
+.content .welcome-txt p{
+    font-size: 2rem;
+    /* font-family: 'Oswald', sans-serif; */
+    font-weight: 200;
+    margin: 13px;
+}
+
+/* Form Portion  */
+
+.form{
+    margin-top: 20px;
+}
+
+
+.form form input{
+    height: 100%;
+    padding: 20px;
+    width: 500px;
+    font-size: 1.2rem;
+}
+
+
+/* Email Submit Btn  */
+.form form button{
+    background-color: #e30914;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 100%;
+    padding: 14px 15px 19.5px 15px;
+    border-radius: 2px;
+}
+
+.form form button a{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+/* Email Info  */
+.form-info{
+    margin: 35px;
+    width: 80vw;
+    /* border: 2px solid yellow; */
+}
+
+.form-info p{
+    font-size: 1.2rem;
+    font-weight: 200;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Section-2 */
+.s-2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+
+.s-2 .txt-container-1 .title-1 h1{
+    font-size: 3.5rem;
+}
+
+.s-2 .txt-container-1 .descp-1{
+    width: 550px;
+    margin-top: 20px;
+}
+
+.s-2 .txt-container-1 .descp-1 p{
+    font-size: 1.8rem;
+}
+
+.s-2 .graphics-1 .image-container{
+    position: relative;
+}
+.s-2 .graphics-1 .image-container img{
+    z-index: 100;
+}
+
+.s-2 .graphics-1 video{
+    left: 78px;
+    z-index: -1;
+    position: absolute;
+    top: 94px;
+}
+
+/* Section-3:Stranger Things */
+.s-3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.s-3 .txt-container-2 .title-2{
+    width: 600px;
+}
+
+.s-3 .txt-container-2 .title-2 h1{
+    font-size: 3.5rem;
+}
+
+.s-3 .txt-container-2 .descp-2{
+    width: 550px;
+    margin-top: 20px;
+}
+
+.s-3 .txt-container-2 .descp-2 p{
+    font-size: 1.8rem;
+}
+
+/* Section-3 video  */
+.s-3 .graphics-2 .image-container{
+    position: relative;
+}
+
+.s-3 .graphics-2 .image-container .video-container-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    width: 380px;
+    border: 2px solid rgb(92, 85, 85);
+    background-color: black;
+    border-radius: 15px;
+    position: absolute;
+    top: 310px;
+    left: 120px;
+}
+
+.s-3 .graphics-2 .image-container .video-container-2 img{
+    width: 60px;
+}
+
+.s-3 .graphics-2 .image-container .video-container-2 .txt h1{
+    font-size: 1.2rem;
+}
+
+.s-3 .graphics-2 .image-container .video-container-2 .txt p{
+    margin-top: 8px;
+    color: rgba(0, 113, 234, 1);
+}
+
+
+/* Section-4 :Sacred Games*/
+.s-4{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.s-4 .txt-container-3 .title-3 h1{
+    font-size: 3.5rem;
+}
+
+.s-4 .txt-container-3 .descp-3{
+    width: 550px;
+    margin-top: 20px;
+}
+
+.s-4 .txt-container-3 .descp-3 p{
+    font-size: 1.8rem;
+}
+
+.s-4 .graphics-3 .image-container{
+    position: relative;
+}
+.s-4 .graphics-3 .image-container img{
+    z-index: 100;
+}
+
+.s-4 .graphics-3 video{
+    left: 114px;
+    z-index: -1;
+    position: absolute;
+    top: 37px;
+    width: 406px;
+}
+
+/* Section-5 */
+
+.sec-5{
+    padding: 20px;
+}
+
+.sec-5 .info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sec-5 .info-content h1{
+    font-size: 3rem;
+    margin: 40px 0px;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    background-color: #303030;
+    padding: 20px;
+    width: 40vw;
+    text-align: start;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown {
+    display: none;
+    margin-top: 2px;
+    outline: none;
+    border: none;
+    background-color: #303030;
+    padding: 10px;
+    width: 40vw;
+    text-align: start;
+}
+
+.dropdown p {
+    font-size: 1.8rem;
+    color: white;
+    margin: 20px;
+}
+
+.btn:focus+.dropdown {
+    display: block;
+}
+
+.info-content .form{
+    margin-top: 20px;
+}
+
+.info-content .form-info{
+    margin-bottom: 20px;
+}
+
+/* Footer Portion */
+footer{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+footer .f-content{
+    display: flex;
+}
+
+footer .f-title h2 a{
+    color: gray;
+    font-size: 1.2rem;
+}
+
+footer .f-title h2 a:hover{
+    text-decoration: underline;
+}
+
+footer .f-content .row{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+
+footer .f-content .row a{
+    color: gray;
+    margin: 8px;
+}
+
+footer .f-content .row a:hover{
+    text-decoration: underline;
+}
+
+footer .f-footer{
+    color: gray;
+}
